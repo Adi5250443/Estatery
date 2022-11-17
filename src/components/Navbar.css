@@ -1,0 +1,153 @@
+.navbar {
+    font-family: "OpenSans-Bold";
+    background-color:rgb(241, 241, 241);
+    display: flex;
+    width: 100%;
+    height: 4rem;
+    box-sizing: border-box;
+    box-shadow: 0 0 4px rgba(255, 251, 251, 0.1);
+    position: relative;
+   justify-content: space-between;
+
+  }
+  .logo{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    width: 20%;
+  }
+  .logo img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    width: 20%;
+  }
+  .navbar-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    cursor: pointer;
+   
+  }
+  .navbar li a {
+    text-decoration: none;
+    font-size: 22px;
+    color: rgb(3, 3, 3);
+    font-weight: bolder;
+    font-family: "OpenSans-Bold";
+    padding: 10px;
+  
+  }
+  .navbar li a:hover {
+    color: rgb(241, 242, 243);
+    background: rgb(144, 144, 228);
+    border-radius: 6px;
+  }
+  .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    gap: 15px;
+    background: whitesmoke;
+  }
+  
+  .btn button {
+    padding: 8px;
+    background-color: rgb(115, 115, 207);
+    font-family:"OpenSans-Bold";
+    font-weight: bolder;
+    font-size: 15px;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+  }
+  .btn button:hover
+  {
+    background-color: rgb(185, 185, 185);
+   
+  }
+
+  @media screen and (max-width: 800px) 
+  {
+     .logo{
+      font-size: 25px;
+     }
+     .logo-img
+     {
+      height: 70%;
+     }
+  }
+  @media screen and (max-width: 700px) 
+  {
+    .logo{
+      font-size: 22px;
+     }
+     .logo-img
+     {
+      height: 50%;
+     }
+     .button 
+     {
+      gap: 10px;
+      margin: 15px;
+     }
+     .btn button{
+
+      font-size:13px ;
+     }
+     .navbar-list {
+       gap: 3rem;
+      }
+     .navbar li a
+     {
+       font-size: 19px;
+     }
+  }
+
+  @media screen and (max-width: 630px) 
+  {
+    .logo{
+      font-size: 18px;
+     }
+     .logo-img
+     {
+      height:40%;
+     }
+    .navbar-list {
+      gap: 2rem;
+     }
+    .navbar li a
+    {
+      font-size: 15px;
+    }
+    .btn button{
+
+      font-size:11px ;
+     }
+  }
+  @media screen and (max-width: 480px) 
+{
+  .logo{
+    font-size: 15px;
+   }
+   .logo-img
+   {
+    height:30%;
+   }
+   .navbar-list {
+    gap: 1rem;
+   }
+   .navbar li a
+    {
+      font-size: 13px;
+    }
+    .btn button{
+
+      font-size:10px ;
+     }
+}

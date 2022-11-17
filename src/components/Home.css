@@ -1,0 +1,165 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+.home
+{
+    width: 85%;
+    margin: 0 auto;
+}
+
+.heading
+{
+    margin-top: 15px;
+     width: 100%;
+     height: 7rem;
+     font-size: 24px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;  
+    font-family:"OpenSans-Bold";
+
+}
+.heading h1
+{
+    margin-left: 20px;
+}
+.search-bar input
+{
+    padding: 9px;
+    border-radius: 5px;
+   
+}
+.filter-box
+{
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    width: 100%;
+    height: 4rem;
+    background-color: white;
+}
+ .filter-box button {
+    padding: 4px;
+    background: rgb(144, 144, 228);
+    font-family:"OpenSans-Bold";
+    font-weight: bolder;
+    border-radius: 5px;
+    margin: 15px;
+    cursor: pointer;
+    width: 60%;
+    font-size: 18px;
+  }
+  .filter-box button:hover
+  {
+    background-color: rgb(185, 185, 185);
+   
+  }
+  .properties {
+    display: grid;
+    width: auto;
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    gap: 20px;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 6px;
+    background-color: whitesmoke;
+  }
+  .property-card{
+
+    border-radius: 6px;
+    background: white;
+  }
+  .property-description
+  {
+    margin: 15px;
+    font-family:"OpenSans-Bold";
+    font-size: 20x;
+  }
+  .property-price
+  {
+     color: rgb(131, 131, 241);
+  }
+  .property-card {
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+  }
+  .card-img {
+    width: 100%;
+    display: block;
+    height: 200px;
+    box-shadow: 0 0 6px rgba(50, 180, 212, 0.1);
+  }
+  .footer
+  {
+    width: 100%;
+    height: 4rem;
+    background: rgb(144, 144, 228);
+    
+  }
+  .footer h2{
+    display: flex;
+    justify-content: center;
+  }
+  .footer h3{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+  }
+
+  @media screen and (max-width: 990px) 
+  {
+    .heading{
+      font-size: 21px;
+    }
+  }
+  @media screen and (max-width: 800px) 
+  {
+    .heading{
+      font-size: 16px;
+    }
+    .filter-box button
+    {
+      font-size: 15px;
+    }
+  }
+  @media screen and (max-width: 700px) 
+  {
+    .heading{
+      font-size: 14px;
+    }
+    .filter-box button
+    {
+      font-size: 13px;
+    }
+    .footer h2{
+
+     font-size: 18px;
+    }
+    .footer h3{
+    font-size: 16px;
+    }
+  }
+  @media screen and (max-width: 630px) 
+  {
+    .heading{
+      font-size: 12px;
+    }
+    .filter-box button
+    {
+      font-size: 11px;
+    }
+  }
+  @media screen and (max-width: 480px) 
+  {
+    .heading{
+      font-size: 10px;
+    }
+    .filter-box button
+    {
+      font-size: 9px;
+    }
+  }
