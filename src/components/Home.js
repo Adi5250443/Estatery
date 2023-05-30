@@ -20,7 +20,7 @@ const Home = () => {
   }
 
   const getProperties = async () => {
-    const response = await fetch("https://estateryapi.herokuapp.com/services");
+    const response = await fetch("https://web-production-f5d5.up.railway.app/");
     console.log(response);
     setProperty(await response.json());
   };
